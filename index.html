@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carl Ericson | Growth Leader & Strategisk Rådgivning B2B</title>
     <meta name="description" content="Carl Ericson hjälper företag med kundfinansierad tillväxt och datadriven B2B-försäljning. Ex-Mentimeter & Grundare av Adsensus.">
-
+    
     <link rel="icon" type="image/png" href="favicon.png">
     
+    <link rel="stylesheet" href="style.css">
+
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,30 +17,6 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-57ZVB7NT');</script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#FF5722', // Accentfärg
-                        dark: '#111111',
-                        light: '#F9F9F9'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        /* Smooth scrolling for anchor links */
-        html { scroll-behavior: smooth; }
-    </style>
-
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,222 +24,192 @@
       "name": "Carl Ericson - Growth Leader",
       "image": "https://carliericson.se/carl-profile.jpg", 
       "url": "https://ca.rlericson.se",
-      "telephone": "", 
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "SE"
-      },
-      "description": "Expert inom kundfinansierad tillväxt och B2B-strategi. Ex-Mentimeter och grundare av Adsensus.",
+      "description": "Expert inom kundfinansierad tillväxt och B2B-strategi.",
       "founder": {
         "@type": "Person",
         "name": "Carl Ericson",
         "alternateName": "Calle Ericson",
         "jobTitle": "Growth Leader",
-        "alumniOf": "Berghs School of Communication",
-        "knowsAbout": ["B2B Sales", "Growth Hacking", "Revenue Operations", "SaaS Strategy"],
-        "sameAs": [
-          "https://www.linkedin.com/in/cericson/", 
-          "https://mentimeter.com", 
-          "https://adsensus.se"
-        ]
+        "sameAs": ["https://www.linkedin.com/in/cericson/"]
       },
       "legalName": "Crl Ercsn AB",
       "vatID": "SE559504302601",
-      "brand": {
-        "@type": "Brand",
-        "name": "Carl Ericson AB"
-      }
+      "brand": { "@type": "Brand", "name": "Crl Ercsn AB" }
     }
     </script>
 </head>
-<body class="bg-white text-dark antialiased">
+<body>
 
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57ZVB7NT"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight">Carl Ericson<span class="text-brand">.</span></a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
-                <a href="#tjanster" class="hover:text-brand transition">Tjänster</a>
-                <a href="#om" class="hover:text-brand transition">Om Calle</a>
-                <a href="#faq" class="hover:text-brand transition">FAQ</a>
+    <nav>
+        <div class="nav-inner">
+            <a href="#" class="logo">Carl Ericson<span class="text-brand">.</span></a>
+            <div class="hidden-mobile nav-links">
+                <a href="#tjanster">Tjänster</a>
+                <a href="#om">Om Calle</a>
+                <a href="#faq">FAQ</a>
             </div>
-            <a href="#booking-section" class="bg-dark text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-brand transition duration-300">Boka Calle</a>
+            <a href="#booking-section" class="btn-nav">Boka Calle</a>
         </div>
     </nav>
 
-    <header id="om" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
-        <div class="max-w-3xl">
-            <span class="inline-block py-1 px-3 rounded-full bg-gray-100 text-brand text-xs font-bold uppercase tracking-wider mb-6">Growth Leader</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8">
-                Strategi möter <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-orange-400">Exekvering.</span>
+    <header id="om" class="container">
+        <div style="max-width: 800px;">
+            <span class="hero-badge">Growth Leader</span>
+            <h1>
+                Strategi möter <br><span class="text-gradient">Exekvering.</span>
             </h1>
-            <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
-                Jag hjälper bolag att skala genom kundfinansierad tillväxt och datadriven B2B-försäljning & marknadsföring.
+            
+            <p style="font-size: 1.25rem; color: var(--color-text-gray); margin-bottom: 2.5rem; line-height: 1.6;">
+                Jag hjälper ambitiösa bolag att driva hållbar tillväxt genom att förena datadriven marknadsföring med strategisk försäljning. Med fokus på kundfinansierad skalbarhet skapar vi resultat som sträcker sig hela vägen från vision till sista raden.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#booking-section" class="inline-flex justify-center items-center bg-brand text-white px-8 py-4 rounded-lg font-bold hover:bg-orange-600 transition shadow-lg shadow-orange-500/30">
-                    Boka Rådgivning
-                </a>
-                <a href="#tjanster" class="inline-flex justify-center items-center px-8 py-4 rounded-lg font-bold border border-gray-200 hover:border-dark transition text-gray-700">
-                    Utforska Tjänster
-                </a>
+            <div class="hero-buttons">
+                <a href="#booking-section" class="btn-primary">Boka Rådgivning</a>
+                <a href="#tjanster" class="btn-outline">Utforska Tjänster</a>
             </div>
         </div>
     </header>
 
-    <section class="border-y border-gray-100 bg-gray-50 py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <p class="text-center text-sm text-gray-400 font-medium mb-8 uppercase tracking-widest">Erfarenhet</p>
-            <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 md:gap-x-12">
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">Mentimeter</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">Adsensus</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">Berghs SoC</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">Tendium</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">BuddyPro</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">TaskRunner</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">Laddaccess</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="text-lg md:text-xl font-bold text-gray-400 hover:text-brand transition duration-300">TechBuddy</a>
+    <section class="section bg-light" style="border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+        <div class="container">
+            <p style="text-align: center; font-size: 0.875rem; color: #9ca3af; font-weight: 600; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">Erfarenhet</p>
+            <div class="experience-list">
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">Mentimeter</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">Adsensus</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">Berghs SoC</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">Tendium</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">BuddyPro</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">TaskRunner</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">Laddaccess</a>
+                <a href="https://www.linkedin.com/in/cericson/" target="_blank" class="exp-link">TechBuddy</a>
             </div>
         </div>
     </section>
 
-    <main id="tjanster" class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Hur jag skapar värde</h2>
-            <p class="text-gray-500 max-w-xl">Skräddarsydd expertis för bolag som vill växa smartare, inte bara snabbare.</p>
+    <main id="tjanster" class="section container">
+        <div style="margin-bottom: 4rem;">
+            <h2>Hur jag skapar värde</h2>
+            <p>Skräddarsydd expertis för bolag som vill växa smartare, inte bara snabbare.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-            <a href="#booking-section" class="block p-8 border border-gray-100 rounded-2xl hover:shadow-xl hover:border-brand/20 transition duration-300 group bg-white relative">
-                <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/10 transition">
-                    <svg class="w-6 h-6 text-dark group-hover:text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+        <div class="services-grid">
+            <a href="#booking-section" class="service-card group">
+                <div class="icon-box">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
-                    Growth-as-a-Service
-                    <svg class="w-4 h-4 text-brand opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </h3>
-                <p class="text-gray-600 mb-4">Din operativa tillväxtpartner. Jag kliver in i organisationen och driver exekvering mot fasta mål. Fast eller rörlig ersättning.</p>
+                <h3>Growth-as-a-Service <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
+                <p>Din operativa tillväxtpartner. Jag kliver in i organisationen och driver exekvering mot fasta mål. Fast eller rörlig ersättning.</p>
             </a>
 
-            <a href="#booking-section" class="block p-8 border border-gray-100 rounded-2xl hover:shadow-xl hover:border-brand/20 transition duration-300 group bg-white relative">
-                <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/10 transition">
-                    <svg class="w-6 h-6 text-dark group-hover:text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <a href="#booking-section" class="service-card group">
+                <div class="icon-box">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
-                    Rådgivning – B2B Tillväxt
-                    <svg class="w-4 h-4 text-brand opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </h3>
-                <p class="text-gray-600 mb-4">Strategisk advisor till ledningsgrupper och styrelser. Fokus på go-to-market strategi och säljprocesser.</p>
+                <h3>Rådgivning – B2B Tillväxt <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
+                <p>Strategisk advisor till ledningsgrupper och styrelser. Fokus på go-to-market strategi och säljprocesser.</p>
             </a>
 
-            <a href="#booking-section" class="block p-8 border border-gray-100 rounded-2xl hover:shadow-xl hover:border-brand/20 transition duration-300 group bg-white relative">
-                <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/10 transition">
-                    <svg class="w-6 h-6 text-dark group-hover:text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <a href="#booking-section" class="service-card group">
+                <div class="icon-box">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
-                    Mentorskap
-                    <svg class="w-4 h-4 text-brand opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </h3>
-                <p class="text-gray-600 mb-4">Personlig coaching för säljchefer, VD:ar och founders som vill utveckla sitt professionella ledarskap inom growth.</p>
+                <h3>Mentorskap <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
+                <p>Personlig coaching för säljchefer, VD:ar och founders som vill utveckla sitt professionella ledarskap inom growth.</p>
             </a>
 
-            <a href="#booking-section" class="block p-8 border border-gray-100 rounded-2xl hover:shadow-xl hover:border-brand/20 transition duration-300 group bg-white relative">
-                <div class="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand/10 transition">
-                    <svg class="w-6 h-6 text-dark group-hover:text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+            <a href="#booking-section" class="service-card group">
+                <div class="icon-box">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
                 </div>
-                <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
-                    Föreläsning & Workshops
-                    <svg class="w-4 h-4 text-brand opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </h3>
-                <p class="text-gray-600 mb-4">Skräddarsydda sessioner för säljteamet eller företaget. Konkreta verktyg, ingen "fluff".</p>
+                <h3>Föreläsning & Workshops <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
+                <p>Skräddarsydda sessioner för säljteamet eller företaget. Konkreta verktyg, ingen "fluff".</p>
             </a>
         </div>
-    </main>
+        
+        <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 2rem; font-style: italic;">
+            *Referenser lämnas på begäran, i mån av tid.*
+        </p>
+        </main>
 
-    <section id="faq" class="py-20 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-10 text-center">Vanliga frågor</h2>
+    <section id="faq" class="section bg-light">
+        <div class="container" style="max-width: 800px;">
+            <h2 style="text-align: center; margin-bottom: 2.5rem;">Vanliga frågor</h2>
             
-            <div class="space-y-4">
-                <details class="group bg-white p-6 rounded-lg border border-gray-200 cursor-pointer">
-                    <summary class="font-semibold text-lg list-none flex justify-between items-center text-dark">
-                        Vad innebär kundfinansierad tillväxt?
-                        <span class="text-brand transition group-open:rotate-180">▼</span>
-                    </summary>
-                    <div class="mt-4 text-gray-600 leading-relaxed">
-                        Kundfinansierad tillväxt innebär att bolaget expanderar genom att återinvestera intäkter från betalande kunder snarare än externt riskkapital. Detta kräver en optimerad säljprocess och starkt fokus på cash-flow, vilket Calle specialiserar sig på.
-                    </div>
-                </details>
+            <details>
+                <summary>Vad innebär kundfinansierad tillväxt?</summary>
+                <div style="margin-top: 1rem;">Kundfinansierad tillväxt innebär att bolaget expanderar genom att återinvestera intäkter från betalande kunder snarare än externt riskkapital. Detta kräver en optimerad säljprocess och starkt fokus på cash-flow.</div>
+            </details>
 
-                <details class="group bg-white p-6 rounded-lg border border-gray-200 cursor-pointer">
-                    <summary class="font-semibold text-lg list-none flex justify-between items-center text-dark">
-                        Hur fungerar Growth-as-a-Service?
-                        <span class="text-brand transition group-open:rotate-180">▼</span>
-                    </summary>
-                    <div class="mt-4 text-gray-600 leading-relaxed">
-                        Growth-as-a-Service är ett upplägg där Calle kliver in operativt i er organisation under en period för att driva tillväxtprojekt. Till skillnad från en traditionell konsult som lämnar en rapport, stannar Calle kvar för exekveringen och resultatuppföljningen.
-                    </div>
-                </details>
+            <details>
+                <summary>Hur fungerar Growth-as-a-Service?</summary>
+                <div style="margin-top: 1rem;">Det är ett upplägg där Calle kliver in operativt i er organisation under en period för att driva tillväxtprojekt. Till skillnad från en traditionell konsult som lämnar en rapport, stannar Calle kvar för exekveringen.</div>
+            </details>
 
-                <details class="group bg-white p-6 rounded-lg border border-gray-200 cursor-pointer">
-                    <summary class="font-semibold text-lg list-none flex justify-between items-center text-dark">
-                        Vilka branscher har Calle erfarenhet av?
-                        <span class="text-brand transition group-open:rotate-180">▼</span>
-                    </summary>
-                    <div class="mt-4 text-gray-600 leading-relaxed">
-                        Calle har djup erfarenhet inom B2B SaaS (Mentimeter) och tjänsteförsäljning (Adsensus). Fokus ligger på komplex B2B-försäljning där strategi måste möta konkret datadriven uppföljning.
-                    </div>
-                </details>
+            <details>
+                <summary>Vilka branscher har Calle erfarenhet av?</summary>
+                <div style="margin-top: 1rem;">Djup erfarenhet inom B2B SaaS (Mentimeter) och tjänsteförsäljning (Adsensus). Fokus ligger på komplex B2B-försäljning där strategi måste möta konkret datadriven uppföljning.</div>
+            </details>
+        </div>
+    </section>
+
+    <section id="booking-section" class="section container">
+        
+        <div class="fit-section">
+            <h3>Rätt förutsättningar för rätt resultat – är vi en bra match?</h3>
+            <p class="fit-text">
+                För mig handlar tillväxt inte om överkonsumtion, utan om att skapa resurser för meningsfullt arbete och en mer hållbar värld. Jag tror på kraften i teamwork och mångfald, och att vi tillsammans faktiskt kan förändra saker till det bättre.
+            </p>
+            <p class="fit-text">
+                Därför arbetar jag uteslutande med verksamheter som vill framåt – inte bara förvalta status quo. Jag är mån om att mina samarbeten rimmar med övertygelsen om att varje affär ska skapa värde både på sista raden och för omvärlden på lång sikt.
+            </p>
+        </div>
+        <div class="booking-card">
+            <div style="position: absolute; top: -5rem; right: -5rem; width: 16rem; height: 16rem; background: var(--color-brand); border-radius: 50%; filter: blur(60px); opacity: 0.2;"></div>
+            
+            <h2 style="position: relative; z-index: 10;">Redo att växla upp?</h2>
+            <p style="margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; position: relative; z-index: 10;">
+                Inga krångliga formulär. Boka ett förutsättningslöst introduktionssamtal direkt i min kalender så tar vi det därifrån.
+            </p>
+            
+            <div class="calendar-card" style="position: relative; z-index: 10;">
+                <div class="icon-box" style="margin: 0 auto 1.5rem auto; background: #fff7ed;">
+                    <svg class="text-brand" style="width: 2rem; height: 2rem;" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+                
+                <h3 style="margin-bottom: 0.75rem;">Boka Intro-samtal</h3>
+                <p style="margin-bottom: 2rem;">
+                    30 minuter video-möte där vi stämmer av dina behov och ser om vi är en bra match.
+                </p>
+                
+                <a href="https://calendar.app.google/YdQr1gpAy1h5eGbv6" target="_blank" class="btn-primary" style="width: 100%; display: flex;">
+                    <span>Öppna Kalender</span>
+                    <svg style="margin-left: 0.5rem; width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                
+                <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 1.5rem;">
+                    Tiderna synkas automatiskt mot min tillgänglighet.
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="booking-section" class="py-24 px-6 max-w-4xl mx-auto text-center">
-        <div class="bg-dark text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden mb-12">
-            <div class="absolute -top-20 -right-20 w-64 h-64 bg-brand rounded-full blur-3xl opacity-20"></div>
-            
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 relative z-10">Redo att växla upp?</h2>
-            <p class="text-gray-300 mb-8 text-lg relative z-10">Välj tjänst och säkra uppdraget direkt.</p>
-            
-            <div class="bg-white rounded-lg min-h-[400px] flex items-center justify-center text-dark relative z-10">
-                <div class="text-center">
-                    <svg class="animate-spin h-8 w-8 text-brand mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    <p class="font-mono text-sm text-gray-500">Laddar formulär...</p>
-                    <p class="text-xs text-gray-400 mt-2">(Integration Point: BuddyPro Script)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-xl mx-auto">
-            <h3 class="text-xl font-bold mb-3 text-dark">Osäker på vad du behöver?</h3>
-            <p class="text-gray-600 mb-6">Boka ett inledande samtal för att se om vi är en bra match.</p>
-            <a href="https://calendar.app.google/YdQr1gpAy1h5eGbv6" target="_blank" class="inline-block px-8 py-3 rounded-lg font-semibold border-2 border-dark text-dark hover:border-brand hover:bg-brand hover:text-white transition duration-300">
-                Boka intro-samtal
-            </a>
-        </div>
-    </section>
-
-    <footer class="bg-white border-t border-gray-100 py-12">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-center md:text-left">
-                <span class="text-xl font-bold tracking-tight">Carl Ericson<span class="text-brand">.</span></span>
-                <p class="text-sm text-gray-500 mt-2">&copy; 2026 Crl Ercsn AB. Alla rättigheter förbehållna.</p>
-                <p class="text-xs text-gray-400 mt-2 font-medium tracking-wide">
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <span class="logo">Carl Ericson<span class="text-brand">.</span></span>
+                <p style="font-size: 0.875rem; margin-top: 0.5rem;">&copy; 2026 Crl Ercsn AB. Alla rättigheter förbehållna.</p>
+                <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem;">
                     Org.nr: 559504-3026 &nbsp;|&nbsp; Godkänd för F-skatt &nbsp;|&nbsp; Momsregistrerad
                 </p>
             </div>
-            <div class="flex space-x-6 items-center">
-                <a href="https://linkedin.com/in/cericson" target="_blank" class="text-gray-400 hover:text-brand transition">LinkedIn</a>
-                <a href="mailto:c@rlericson.se" class="text-gray-400 hover:text-brand transition">Email</a>
-                <a href="javascript: void(0)" onclick="Cookiebot.renew()" class="text-xs text-gray-400 border border-gray-200 px-2 py-1 rounded hover:border-brand hover:text-brand transition">Hantera kakor</a>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/cericson" target="_blank">LinkedIn</a>
+                <a href="mailto:c@rlericson.se">Email</a>
+                <button type="button" onclick="Cookiebot.renew()" class="cookie-btn">Hantera kakor</button>
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>
