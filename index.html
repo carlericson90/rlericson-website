@@ -95,37 +95,130 @@
         </div>
 
         <div class="services-grid">
-            <a href="#booking-section" id="service-card-growth" class="service-card group">
+            
+            <div class="service-card group" onclick="toggleService(this)">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                 </div>
-                <h3>Growth-as-a-Service <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
-                <p>Din operativa tillväxtpartner. Jag kliver in i organisationen och driver exekvering mot fasta mål. Fast eller rörlig ersättning.</p>
-            </a>
+                <h3>Growth-as-a-Service <svg class="arrow-icon toggle-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></h3>
+                <p>Operativ tillväxtkompetens när ni behöver resultat – inte bara råd.</p>
+                
+                <div class="service-details">
+                    <p style="font-weight: 500; margin-bottom: 1rem;">Som er operativa partner kliver jag in i verksamheten och tar direkt ansvar för att exekvera på era tillväxtmål.</p>
+                    <p>Genom att förena 15 års säljerfarenhet med moderna growth-metodiker säkerställer jag att strategin faktiskt omsätts i mätbar effekt på sista raden.</p>
+                    
+                    <ul style="margin-top: 1rem;">
+                        <li>Hands-on genomförande inom sälj, marknadsföring och GTM-strategi.</li>
+                        <li>Tätt samarbete och kunskapsöverföring till befintligt team.</li>
+                        <li>Ansvar för leverans av definierade projekt och tillväxtinitiativ.</li>
+                        <li>Datadriven optimering av säljprocesser och kundanskaffning.</li>
+                    </ul>
 
-            <a href="#booking-section" id="service-card-advisory" class="service-card group">
+                    <div class="service-price">
+                        <strong>Prisbild (exkl. moms):</strong><br>
+                        Startups: 500 SEK/h (Min 4h)<br>
+                        Scaleups (5-50 anst.): 800 SEK/h (Min 8h)<br>
+                        Bolag 50+ anst.: 1 500 SEK/h (Min 16h)
+                    </div>
+
+                    <div class="service-actions">
+                        <a href="mailto:c@rlericson.se?subject=Förfrågan: Growth-as-a-Service&body=Hej Calle! Jag skriver från [Bolag] och vi är nyfikna på Growth-as-a-Service. Vi behöver operativ hjälp med [Beskriv kort utmaning] för att öka vår tillväxttakt. Hör av dig!" class="btn-action-primary">Skicka förfrågan</a>
+                        <a href="#booking-section" class="btn-action-secondary">Boka möte</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card group" onclick="toggleService(this)">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
-                <h3>Rådgivning – B2B Tillväxt <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
-                <p>Strategisk advisor till ledningsgrupper och styrelser. Fokus på go-to-market strategi och säljprocesser.</p>
-            </a>
+                <h3>Rådgivning – B2B Tillväxt <svg class="arrow-icon toggle-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></h3>
+                <p>Strategiskt beslutsstöd för bolag som vill växa hållbart.</p>
 
-            <a href="#booking-section" id="service-card-mentor" class="service-card group">
+                <div class="service-details">
+                    <p style="font-weight: 500; margin-bottom: 1rem;">Här fungerar jag som advisor till grundare, ledningsgrupper och styrelser med fokus på de kritiska vägvalen.</p>
+                    <p>Genom att tillföra struktur, perspektiv och erfarenhetsbaserad prioritering skapar vi en tydlig riktning för er långsiktiga expansion.</p>
+                    
+                    <ul style="margin-top: 1rem;">
+                        <li>Strategisk positionering och go-to-market-analys.</li>
+                        <li>Prioritering av tillväxtinitiativ baserat på affärsnytta.</li>
+                        <li>Perspektiv på organisation, säljprocess och skalbarhet.</li>
+                        <li>Löpande bollplank för VD och ledningsgrupp.</li>
+                    </ul>
+
+                    <div class="service-price">
+                        <strong>Prisbild (exkl. moms):</strong><br>
+                        Startup: 500 SEK/h (Min 1h)<br>
+                        Bolag 5-50 anst.: 800 SEK/h (Min 2h)<br>
+                        Bolag 50+ anst.: 1 500 SEK/h (Min 2h)
+                    </div>
+
+                    <div class="service-actions">
+                        <a href="mailto:c@rlericson.se?subject=Förfrågan: Strategisk Rådgivning B2B&body=Hej Calle! Jag sitter i ledningen för [Bolag] och behöver ett strategiskt bollplank kring vår tillväxtresa. Vi vill diskutera [Strategiskt område/Positionering]. När har du tid för ett kort samtal?" class="btn-action-primary">Skicka förfrågan</a>
+                        <a href="#booking-section" class="btn-action-secondary">Boka möte</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card group" onclick="toggleService(this)">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </div>
-                <h3>Mentorskap <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
-                <p>Personlig coaching för säljchefer, VD:ar och founders som vill utveckla sitt professionella ledarskap inom growth.</p>
-            </a>
+                <h3>Mentorskap <svg class="arrow-icon toggle-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></h3>
+                <p>Personlig coaching för dig som vill växa i din roll eller ditt bolag.</p>
 
-            <a href="#booking-section" id="service-card-workshop" class="service-card group">
+                <div class="service-details">
+                    <p style="font-weight: 500; margin-bottom: 1rem;">En konfidentiell och strukturerad process som hjälper dig att fatta bättre beslut och öka ditt handlingsutrymme.</p>
+                    <p>Vi fokuserar på att omsätta insikter till faktiska förändringar som ger både professionell framgång och personlig balans.</p>
+                    
+                    <ul style="margin-top: 1rem;">
+                        <li>Individuellt anpassade samtal utifrån dina mål och utmaningar.</li>
+                        <li>Stöd vid karriärval eller utveckling i ledarrollen.</li>
+                        <li>Verktyg för klarhet, fokus och långsiktig beslutskraft.</li>
+                        <li>Erfarenhetsutbyte kring entreprenörskap och balans i livet.</li>
+                    </ul>
+
+                    <div class="service-price">
+                        <strong>Investering:</strong> 500 SEK/h (Inkl. moms)
+                    </div>
+
+                    <div class="service-actions">
+                        <a href="mailto:c@rlericson.se?subject=Förfrågan: Mentorskap & Coaching&body=Hej Calle! Jag är intresserad av mentorskap för att ta nästa steg i min utveckling som [Roll/Founder]. Jag vill fokusera på [Mål/Utmaning] och vill gärna höra mer om hur vi lägger upp det." class="btn-action-primary">Skicka förfrågan</a>
+                        <a href="#booking-section" class="btn-action-secondary">Boka möte</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card group" onclick="toggleService(this)">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
                 </div>
-                <h3>Föreläsning & Workshops <svg class="arrow-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></h3>
-                <p>Skräddarsydda sessioner för säljteamet eller företaget. Konkreta verktyg, ingen "fluff".</p>
-            </a>
+                <h3>Föreläsning & Workshops <svg class="arrow-icon toggle-icon" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></h3>
+                <p>Skräddarsydd kompetensutveckling som flyttar teamet framåt.</p>
+
+                <div class="service-details">
+                    <p style="font-weight: 500; margin-bottom: 1rem;">Inga standardmallar, bara konkreta insikter baserade på verkliga case och er specifika affärsnytta.</p>
+                    <p>Oavsett om ni behöver en inspirerande föreläsning eller en hands-on workshop, anpassas innehållet helt efter er organisation, era mål och er publik.</p>
+                    
+                    <ul style="margin-top: 1rem;">
+                        <li>Skräddarsytt innehåll inom B2B-tillväxt, sälj och growth marketing.</li>
+                        <li>Interaktiva inslag för att omsätta teori till praktisk handling.</li>
+                        <li>All förberedelse och research inkluderat i arvodet.</li>
+                        <li>Anpassning för ledningsgrupper, team eller utbildningsinstanser.</li>
+                    </ul>
+
+                    <div class="service-price">
+                        <strong>Investering:</strong> 2 000 SEK per föreläsningstimme (Exkl. moms).<br>
+                        (Priset inkluderar all förberedelse och research).
+                    </div>
+
+                    <div class="service-actions">
+                        <a href="mailto:c@rlericson.se?subject=Förfrågan: Föreläsning/Workshop&body=Hej Calle! Vi planerar en [Konferens/Utbildning/Workshop] för [Målgrupp] och vill boka dig för en session om [Ämne]. Kan du skicka ett förslag på hur vi kan lägga upp det för att skapa mest värde?" class="btn-action-primary">Skicka förfrågan</a>
+                        <a href="#booking-section" class="btn-action-secondary">Boka möte</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         
         <p class="text-center" style="font-size: 0.75rem; color: #9ca3af; margin-top: 2rem; font-style: italic;">
@@ -212,6 +305,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleService(card) {
+            // Find the details div inside the clicked card
+            const details = card.querySelector('.service-details');
+            
+            // Toggle active class
+            if (details.classList.contains('active')) {
+                details.classList.remove('active');
+                card.classList.remove('open');
+            } else {
+                // Optional: Close other open cards (Uncomment below lines to enable)
+                // document.querySelectorAll('.service-details').forEach(el => el.classList.remove('active'));
+                // document.querySelectorAll('.service-card').forEach(el => el.classList.remove('open'));
+                
+                details.classList.add('active');
+                card.classList.add('open');
+            }
+        }
+    </script>
 
 </body>
 </html>
