@@ -34,7 +34,7 @@
       },
       "legalName": "Crl Ercsn AB",
       "vatID": "SE559504302601",
-      "brand": { "@type": "Brand", "name": "Crl Ercsn AB" }
+      "brand": { "@type": "Brand", "name": "Carl Ericson AB" }
     }
     </script>
 </head>
@@ -50,7 +50,7 @@
                 <a href="#om">Om Calle</a>
                 <a href="#faq">FAQ</a>
             </div>
-            <a href="#booking-section" class="btn-nav">Boka Calle</a>
+            <a href="#booking-section" id="btn-nav-book" class="btn-nav">Boka Calle</a>
         </div>
     </nav>
 
@@ -64,9 +64,10 @@
             <p style="font-size: 1.25rem; color: var(--color-text-gray); margin-bottom: 2.5rem; line-height: 1.6;">
                 Jag hjälper ambitiösa bolag att driva hållbar tillväxt genom att förena datadriven marknadsföring med strategisk försäljning. Med fokus på kundfinansierad skalbarhet skapar vi resultat som sträcker sig hela vägen från vision till sista raden.
             </p>
+
             <div class="hero-buttons">
-                <a href="#booking-section" class="btn-primary">Boka Rådgivning</a>
-                <a href="#tjanster" class="btn-outline">Utforska Tjänster</a>
+                <a href="#booking-section" id="btn-hero-book" class="btn-primary">Boka Rådgivning</a>
+                <a href="#tjanster" id="btn-hero-services" class="btn-outline">Utforska Tjänster</a>
             </div>
         </div>
     </header>
@@ -94,7 +95,7 @@
         </div>
 
         <div class="services-grid">
-            <a href="#booking-section" class="service-card group">
+            <a href="#booking-section" id="service-card-growth" class="service-card group">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                 </div>
@@ -102,7 +103,7 @@
                 <p>Din operativa tillväxtpartner. Jag kliver in i organisationen och driver exekvering mot fasta mål. Fast eller rörlig ersättning.</p>
             </a>
 
-            <a href="#booking-section" class="service-card group">
+            <a href="#booking-section" id="service-card-advisory" class="service-card group">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
@@ -110,7 +111,7 @@
                 <p>Strategisk advisor till ledningsgrupper och styrelser. Fokus på go-to-market strategi och säljprocesser.</p>
             </a>
 
-            <a href="#booking-section" class="service-card group">
+            <a href="#booking-section" id="service-card-mentor" class="service-card group">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 </div>
@@ -118,7 +119,7 @@
                 <p>Personlig coaching för säljchefer, VD:ar och founders som vill utveckla sitt professionella ledarskap inom growth.</p>
             </a>
 
-            <a href="#booking-section" class="service-card group">
+            <a href="#booking-section" id="service-card-workshop" class="service-card group">
                 <div class="icon-box">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
                 </div>
@@ -127,10 +128,10 @@
             </a>
         </div>
         
-        <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 2rem; font-style: italic;">
+        <p class="text-center" style="font-size: 0.75rem; color: #9ca3af; margin-top: 2rem; font-style: italic;">
             *Referenser lämnas på begäran, i mån av tid.*
         </p>
-        </main>
+    </main>
 
     <section id="faq" class="section bg-light">
         <div class="container" style="max-width: 800px;">
@@ -148,7 +149,7 @@
 
             <details>
                 <summary>Vilka branscher har Calle erfarenhet av?</summary>
-                <div style="margin-top: 1rem;">Djup erfarenhet inom B2B SaaS (Mentimeter) och tjänsteförsäljning (Adsensus). Fokus ligger på komplex B2B-försäljning där strategi måste möta konkret datadriven uppföljning.</div>
+                <div style="margin-top: 1rem;">Jag har djup erfarenhet inom B2B, med särskild spetskompetens inom SaaS, mjukvara och försäljning av komplexa tjänster (Professional Services). Min strategi fungerar bäst där affären bygger på förtroende och långsiktiga relationer, oavsett om det handlar om digitala produkter eller konsultativa lösningar.</div>
             </details>
         </div>
     </section>
@@ -164,6 +165,7 @@
                 Därför arbetar jag uteslutande med verksamheter som vill framåt – inte bara förvalta status quo. Jag är mån om att mina samarbeten rimmar med övertygelsen om att varje affär ska skapa värde både på sista raden och för omvärlden på lång sikt.
             </p>
         </div>
+
         <div class="booking-card">
             <div style="position: absolute; top: -5rem; right: -5rem; width: 16rem; height: 16rem; background: var(--color-brand); border-radius: 50%; filter: blur(60px); opacity: 0.2;"></div>
             
@@ -182,7 +184,7 @@
                     30 minuter video-möte där vi stämmer av dina behov och ser om vi är en bra match.
                 </p>
                 
-                <a href="https://calendar.app.google/YdQr1gpAy1h5eGbv6" target="_blank" class="btn-primary" style="width: 100%; display: flex;">
+                <a href="https://calendar.app.google/YdQr1gpAy1h5eGbv6" target="_blank" id="btn-calendar-open" class="btn-primary" style="width: 100%; display: flex;">
                     <span>Öppna Kalender</span>
                     <svg style="margin-left: 0.5rem; width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
