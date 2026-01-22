@@ -148,7 +148,12 @@ header {
 }
 
 /* Fit Section */
-.fit-section { max-width: 800px; margin: 0 auto 3rem auto; text-align: center; }
+.fit-section { 
+    max-width: 800px; 
+    margin: 0 auto 3rem auto; 
+    text-align: center; 
+    padding: 0 1.5rem; /* NYTT: Skapar luft på mobilen */
+}
 .fit-section h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 .fit-text { font-size: 1.1rem; line-height: 1.7; color: #374151; }
 
