@@ -23,7 +23,7 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml">
       hreflang="x-default"
       href="https://ca.rlericson.se/" />
 
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -47,15 +47,26 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml">
       hreflang="x-default"
       href="https://ca.rlericson.se/" />
 
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Service page -->
   <url>
-    <loc>https://ca.rlericson.se/growth-as-a-service</loc>
-    <lastmod>2026-03-16</lastmod>
+    <loc>https://ca.rlericson.se/growth-as-a-service.html</loc>
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="sv"
+      href="https://ca.rlericson.se/growth-as-a-service.html" />
+
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://ca.rlericson.se/growth-as-a-service.html" />
+
+    <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
