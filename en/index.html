@@ -29,10 +29,48 @@
     <style>
         /* Mobil: Rejält avstånd */
         header { padding-top: 11rem !important; padding-bottom: 4rem !important; }
-        
+
         /* Desktop: Massivt avstånd för att garantera luft */
         @media (min-width: 768px) {
             header { padding-top: 16rem !important; padding-bottom: 6rem !important; }
+        }
+
+        /* Experience grid */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .experience-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+        }
+        .exp-group-label {
+            font-size: 0.7rem;
+            color: #9ca3af;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.6rem;
+        }
+        .exp-group-links { display: flex; flex-direction: column; gap: 0.35rem; }
+
+        /* About section */
+        .om-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        @media (min-width: 768px) {
+            .om-grid { grid-template-columns: 260px 1fr; }
+        }
+        .om-photo {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 1rem;
+            object-fit: cover;
+            aspect-ratio: 3/4;
         }
     </style>
 
@@ -130,6 +168,54 @@
             "@type": "Answer",
             "text": "Interim often means replacing a role full-time for a period. Fractional is more flexible: Calle steps in 0.5–3 days per week and complements the team where the need is greatest, with a focus on delivery and knowledge transfer."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you based in Stockholm and can you work on-site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Calle is primarily based in Stockholm and regularly works on-site with clients in the Stockholm region. Remote work works equally well for ongoing engagements, and most collaborations are a mix of in-person meetings and digital work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can an engagement get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "From first conversation to kick-off typically takes one to two weeks. We always start with a no-strings-attached intro call to align on needs — that takes 30 minutes. There is no lengthy onboarding process or bureaucracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a typical engagement last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most collaborations run for at least three to six months. Growth takes time to build properly, and short engagements rarely provide the depth needed for real change. Many engagements transition into an ongoing advisory arrangement once the immediate priorities are addressed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a fractional CMO and Growth-as-a-Service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A fractional CMO is typically focused on marketing leadership and strategy. Growth-as-a-Service is broader: it includes sales, GTM strategy, and operational execution. Calle moves between marketing and sales and identifies where business energy is actually being lost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Growth-as-a-Service and a traditional marketing agency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An agency delivers predefined services at arm's length. Growth-as-a-Service is an operational partnership where Calle steps into your team, takes responsibility for defined initiatives, and ensures the strategy is actually executed with a focus on real business outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help companies outside Sweden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Calle has experience of international work from Mentimeter among others, with roles across North America and EMEA. Remote arrangements work well for most types of collaboration, and he works fluently in English."
+          }
         }
       ]
     }
@@ -144,7 +230,8 @@
             <a href="/en/" class="logo">Carl Ericson<span class="text-brand">.</span></a>
             
             <div class="hidden-mobile nav-links">
-                <a href="#services">Services</a>
+                <a href="/growth-as-a-service.html">Growth-as-a-Service</a>
+                <a href="#services">More Services</a>
                 <a href="#about">About</a>
                 <a href="#faq">FAQ</a>
             </div>
@@ -156,7 +243,7 @@
         </div>
     </nav>
 
-    <header id="about" class="container">
+    <header id="hero" class="container">
         <div style="max-width: 800px;">
             <span class="hero-badge">Growth Leader</span>
             <h1>
@@ -176,20 +263,73 @@
 
     <section class="section bg-light" style="border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
         <div class="container">
-            <p style="text-align: center; font-size: 0.875rem; color: #9ca3af; font-weight: 600; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 0.1em;">Experience</p>
-            <div class="experience-list">
-                <a href="https://www.mentimeter.com" target="_blank" rel="noopener" class="exp-link">Mentimeter</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">Adsensus</a>
-                <a href="https://www.berghs.se" target="_blank" rel="noopener" class="exp-link">Berghs SoC</a>
-                <a href="https://tendium.ai" target="_blank" rel="noopener" class="exp-link">Tendium</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">BuddyPro</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">TaskRunner</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">Laddaccess</a>
-                <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">TechBuddy</a>
+            <div class="experience-grid">
+                <div class="exp-group">
+                    <p class="exp-group-label">Current Engagements</p>
+                    <div class="exp-group-links">
+                        <a href="https://www.yepstr.com/se" target="_blank" rel="noopener" class="exp-link">Yepstr</a>
+                        <a href="https://vsme-reporter.com/" target="_blank" rel="noopener" class="exp-link">VSME-Reporter</a>
+                        <a href="https://ejbla.com/sv" target="_blank" rel="noopener" class="exp-link">Ejbla</a>
+                        <a href="https://brunilo.com/sv" target="_blank" rel="noopener" class="exp-link">Brunilo</a>
+                    </div>
+                </div>
+                <div class="exp-group">
+                    <p class="exp-group-label">Previous Engagements</p>
+                    <div class="exp-group-links">
+                        <a href="https://tendium.ai" target="_blank" rel="noopener" class="exp-link">Tendium</a>
+                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">Laddaccess</a>
+                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">BuddyPro</a>
+                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">TaskRunner</a>
+                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">TechBuddy</a>
+                        <a href="https://www.berghs.se" target="_blank" rel="noopener" class="exp-link">Berghs SoC</a>
+                    </div>
+                </div>
+                <div class="exp-group">
+                    <p class="exp-group-label">Employment</p>
+                    <div class="exp-group-links">
+                        <a href="https://www.mentimeter.com" target="_blank" rel="noopener" class="exp-link">Mentimeter</a>
+                    </div>
+                </div>
+                <div class="exp-group">
+                    <p class="exp-group-label">Founder</p>
+                    <div class="exp-group-links">
+                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">Adsensus <span style="font-size: 0.75em; color: #9ca3af; font-weight: 400;">DI Gasell ×3</span></a>
+                    </div>
+                </div>
             </div>
-            <p style="text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 1.5rem;">
-                Founder of Adsensus (DI Gasell ×3) &nbsp;·&nbsp; Strategic roles at Mentimeter &nbsp;·&nbsp; Alumnus of Berghs School of Communication &nbsp;·&nbsp; 15+ years in B2B sales and growth
+            <p style="text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 0.5rem;">
+                15+ years in B2B sales and growth &nbsp;·&nbsp; Alumnus and former course supervisor, Berghs School of Communication
             </p>
+        </div>
+    </section>
+
+    <section id="about" class="section container">
+        <div class="om-grid">
+            <div>
+                <img src="../carl-profile.jpg" alt="Carl Ericson – Fractional Growth Leader B2B" class="om-photo">
+            </div>
+            <div>
+                <h2 style="margin-bottom: 1.5rem;">About Calle</h2>
+                <div style="line-height: 1.8; color: var(--color-text);">
+                    <p style="margin-bottom: 1.25rem;">I am a B2B growth strategist with roots in 15 years of real sales experience — not theory. I came to growth through business, not through marketing, and that shapes how I think: growth is a business problem, not a channel.</p>
+
+                    <p style="margin-bottom: 1.25rem;">My journey starts with Adsensus, a company I built and ran as a partner. Three years in a row we were named DI Gasell — not because we were good at PowerPoint, but because we built a commercial engine that actually worked when cash flow mattered. That's where I learned that growth requires structure, process, and a team that understands <em>why</em> they do what they do.</p>
+
+                    <p style="margin-bottom: 1.25rem;">Then came Mentimeter, where I was part of a period of international expansion. I built and led sales teams across North America and EMEA, significantly improved win-rates, shortened sales cycles, and aligned sales and marketing in a way that created real momentum. That taught me that scalability is not the result of more resources — it is the result of better systems and clearer leadership.</p>
+
+                    <p style="margin-bottom: 1.25rem;">I now work as a fractional growth leader through Crl Ercsn AB. This means stepping into companies operationally as someone who can both think and execute — not leave a report and disappear. I work 0.5–3 days per week embedded in your team, responsible for ensuring that strategy actually translates into measurable impact.</p>
+
+                    <p style="margin-bottom: 2rem;">I am an alumnus and former course supervisor at Berghs School of Communication, combining that with a deep grounding in B2B sales and modern growth methodology.</p>
+
+                    <h3 style="font-size: 1.15rem; margin-bottom: 1rem;">How I think about growth</h3>
+
+                    <p style="margin-bottom: 1.25rem;">Growth should be customer-funded where possible. That means the sales process must work <em>before</em> you scale, that retention matters as much as acquisition, and that capital should not mask inefficiency.</p>
+
+                    <p style="margin-bottom: 1.25rem;">I rarely think "which channel should we optimise?" I think: where are we losing business energy between signal and revenue? That answer moves across GTM, funnel, ICP, messaging, sales process, and organisational culture — often at the same time.</p>
+
+                    <p>This means I work best with companies that have a real product but commercial friction. Companies where marketing and sales work in parallel instead of together. Founder-led scaleups with strong intuition but lacking structure. B2B companies in SaaS and professional services, where business is built on trust and relationships rather than volume and reach.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -367,6 +507,37 @@
                 <summary>What is the difference from interim?</summary>
                 <div style="margin-top: 1rem;">Interim often means replacing a role full-time for a period. Fractional is more flexible: I step in 0.5–3 days per week and complement the team where the need is greatest, with a focus on delivery and knowledge transfer.</div>
             </details>
+
+            <details>
+                <summary>Are you based in Stockholm and can you work on-site?</summary>
+                <div style="margin-top: 1rem;">Yes, I am primarily based in Stockholm and regularly work on-site with clients in the Stockholm region. Remote work works equally well for ongoing engagements, and most collaborations are a mix of in-person meetings and digital work. Regardless of geography, the arrangement is adapted to what creates the best conditions for you.</div>
+            </details>
+
+            <details>
+                <summary>How quickly can an engagement get started?</summary>
+                <div style="margin-top: 1rem;">From first conversation to kick-off typically takes one to two weeks. We always start with a no-strings-attached intro call to align on needs and see if we are a good match — that takes 30 minutes. From there we put together an arrangement and can get going quickly. There is no lengthy onboarding process or bureaucracy.</div>
+            </details>
+
+            <details>
+                <summary>How long does a typical engagement last?</summary>
+                <div style="margin-top: 1rem;">It varies depending on scope, but most collaborations run for at least three to six months. Growth takes time to build properly, and short engagements rarely provide the depth needed for real change. Many engagements transition into an ongoing advisory arrangement once the immediate priorities are addressed. We always start from what actually creates value for you — not from lengthy contracts for their own sake.</div>
+            </details>
+
+            <details>
+                <summary>What is the difference between a fractional CMO and Growth-as-a-Service?</summary>
+                <div style="margin-top: 1rem;">A fractional CMO is typically focused on marketing leadership and strategy. Growth-as-a-Service is broader: it includes sales, GTM strategy, and operational execution — not just marketing. In practice I move between marketing and sales, identify where business energy is actually being lost, and take responsibility for addressing it. It works best for companies that need growth as a whole, not just a CMO function.</div>
+            </details>
+
+            <details>
+                <summary>What is the difference between Growth-as-a-Service and a traditional marketing agency?</summary>
+                <div style="margin-top: 1rem;">An agency delivers predefined services — advertising, content, design — at arm's length. Growth-as-a-Service is not a supplier, it is an operational partnership. I step into your team, take responsibility for defined initiatives, and make sure the strategy is actually executed. This means close collaboration, knowledge transfer to existing team members, and a focus on real business outcomes — not deliverables in themselves.</div>
+            </details>
+
+            <details>
+                <summary>Can you help companies outside Sweden?</summary>
+                <div style="margin-top: 1rem;">Yes. I have experience of international work from Mentimeter among others, with roles across North America and EMEA. Remote arrangements work well for most types of collaboration, and I work fluently in English. Get in touch regardless of where you are based.</div>
+            </details>
+
         </div>
     </section>
 
