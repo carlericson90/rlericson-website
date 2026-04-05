@@ -27,50 +27,9 @@
     <meta name="twitter:image" content="https://ca.rlericson.se/carl-profile.jpg" />
 
     <style>
-        /* Mobil: Rejält avstånd */
-        header { padding-top: 11rem !important; padding-bottom: 4rem !important; }
-
-        /* Desktop: Massivt avstånd för att garantera luft */
-        @media (min-width: 768px) {
-            header { padding-top: 16rem !important; padding-bottom: 6rem !important; }
-        }
-
-        /* Erfarenhetsgrid */
-        .experience-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        @media (min-width: 768px) {
-            .experience-grid { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-        }
-        .exp-group-label {
-            font-size: 0.7rem;
-            color: #9ca3af;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 0.6rem;
-        }
-        .exp-group-links { display: flex; flex-direction: column; gap: 0.35rem; }
-
-        /* Om Calle-sektion */
-        .om-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-            align-items: start;
-        }
-        @media (min-width: 768px) {
-            .om-grid { grid-template-columns: 260px 1fr; }
-        }
-        .om-photo {
-            width: 100%;
-            max-width: 260px;
-            border-radius: 1rem;
-            object-fit: cover;
-            aspect-ratio: 3/4;
+        /* Hero padding – override if needed */
+        @media (max-width: 767px) {
+            header { padding-top: 8rem !important; }
         }
     </style>
 
@@ -247,7 +206,7 @@
         <div style="max-width: 800px;">
             <span class="hero-badge">Growth Leader</span>
             <h1>
-                Strategi möter <br><span class="text-gradient">Exekvering.</span>
+                Strategi möter <br><span class="text-brand">Exekvering.</span>
             </h1>
             
             <p style="font-size: 1.25rem; color: var(--color-text-gray); margin-bottom: 2.5rem; line-height: 1.6;">
@@ -261,47 +220,37 @@
         </div>
     </header>
 
-    <section class="section bg-light" style="border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
-        <div class="container">
-            <div class="experience-grid">
-                <div class="exp-group">
-                    <p class="exp-group-label">Nuvarande uppdrag</p>
-                    <div class="exp-group-links">
-                        <a href="https://www.yepstr.com/se" target="_blank" rel="noopener" class="exp-link">Yepstr</a>
-                        <a href="https://vsme-reporter.com/" target="_blank" rel="noopener" class="exp-link">VSME-Reporter</a>
-                        <a href="https://ejbla.com/sv" target="_blank" rel="noopener" class="exp-link">Ejbla</a>
-                        <a href="https://brunilo.com/sv" target="_blank" rel="noopener" class="exp-link">Brunilo</a>
-                    </div>
-                </div>
-                <div class="exp-group">
-                    <p class="exp-group-label">Tidigare uppdrag</p>
-                    <div class="exp-group-links">
-                        <a href="https://tendium.ai" target="_blank" rel="noopener" class="exp-link">Tendium</a>
-                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">Laddaccess</a>
-                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">BuddyPro</a>
-                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">TaskRunner</a>
-                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">TechBuddy</a>
-                        <a href="https://www.berghs.se" target="_blank" rel="noopener" class="exp-link">Berghs SoC</a>
-                    </div>
-                </div>
-                <div class="exp-group">
-                    <p class="exp-group-label">Anställning</p>
-                    <div class="exp-group-links">
-                        <a href="https://www.mentimeter.com" target="_blank" rel="noopener" class="exp-link">Mentimeter</a>
-                    </div>
-                </div>
-                <div class="exp-group">
-                    <p class="exp-group-label">Grundare</p>
-                    <div class="exp-group-links">
-                        <a href="https://www.linkedin.com/in/cericson/" target="_blank" rel="noopener" class="exp-link">Adsensus <span style="font-size: 0.75em; color: #9ca3af; font-weight: 400;">DI Gasell ×3</span></a>
-                    </div>
-                </div>
-            </div>
-            <p style="text-align: center; font-size: 0.8rem; color: #9ca3af; margin-top: 0.5rem;">
-                15+ år inom B2B-försäljning och tillväxt &nbsp;·&nbsp; Alumn och f.d. handledare, Berghs School of Communication
-            </p>
+    <!-- Credential Ticker -->
+    <div class="ticker-section" aria-label="Erfarenhet från bolag">
+        <div class="ticker-track">
+            <!-- First set -->
+            <span class="ticker-item">Yepstr</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">VSME-Reporter</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Ejbla</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Brunilo</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Mentimeter</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Tendium</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Laddaccess</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">BuddyPro</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">TaskRunner</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">TechBuddy</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Berghs SoC</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Adsensus</span><span class="ticker-sep">·</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="ticker-item">Yepstr</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">VSME-Reporter</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Ejbla</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Brunilo</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Mentimeter</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Tendium</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Laddaccess</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">BuddyPro</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">TaskRunner</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">TechBuddy</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Berghs SoC</span><span class="ticker-sep">·</span>
+            <span class="ticker-item">Adsensus</span><span class="ticker-sep">·</span>
         </div>
-    </section>
+    </div>
 
     <section id="om" class="section container">
         <div class="om-grid">
@@ -309,7 +258,7 @@
                 <img src="carl-profile.jpg" alt="Carl Ericson – Fractional Growth Leader B2B" class="om-photo">
             </div>
             <div>
-                <h2 style="margin-bottom: 1.5rem;">Om Calle</h2>
+                <h2 style="margin-bottom: 1.5rem;">Om Calle<span class="text-brand">.</span></h2>
                 <div style="line-height: 1.8; color: var(--color-text);">
                     <p style="margin-bottom: 1.25rem;">Jag är en B2B-tillväxtstrateg med rötterna i 15 år av faktisk säljverksamhet — inte teori. Jag kom till growth via affären, inte via marknadsföring, och det präglar hur jag tänker: tillväxt är ett affärsproblem, inte en kanal.</p>
 
@@ -589,18 +538,20 @@
     </section>
 
     <footer>
-        <div class="container footer-content">
-            <div>
-                <span class="logo">Carl Ericson<span class="text-brand">.</span></span>
-                <p style="font-size: 0.875rem; margin-top: 0.5rem;">&copy; 2026 Crl Ercsn AB. Alla rättigheter förbehållna.</p>
-                <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem;">
-                    Org.nr: 559504-3026 &nbsp;|&nbsp; Godkänd för F-skatt &nbsp;|&nbsp; Momsregistrerad
-                </p>
+        <div class="container">
+            <div class="footer-headline-wrap">
+                <div class="footer-headline">CARL ERICSON<span class="footer-dot">.</span></div>
             </div>
-            <div class="footer-links">
-                <a href="https://linkedin.com/in/cericson" target="_blank">LinkedIn</a>
-                <a href="mailto:c@rlericson.se">Email</a>
-                <button type="button" onclick="Cookiebot.renew()" class="cookie-btn">Hantera kakor</button>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; 2026 Crl Ercsn AB. Alla rättigheter förbehållna.</p>
+                    <p>Org.nr: 559504-3026 &nbsp;|&nbsp; Godkänd för F-skatt &nbsp;|&nbsp; Momsregistrerad</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/cericson" target="_blank">LinkedIn</a>
+                    <a href="mailto:c@rlericson.se">Email</a>
+                    <button type="button" onclick="Cookiebot.renew()" class="cookie-btn">Hantera kakor</button>
+                </div>
             </div>
         </div>
     </footer>
