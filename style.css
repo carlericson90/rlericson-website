@@ -352,18 +352,47 @@ summary { font-weight: 600; cursor: pointer; list-style: none; display: flex; ju
 summary::after { content: "▼"; color: var(--color-brand); font-size: 0.8rem; transition: 0.3s; }
 details[open] summary::after { transform: rotate(180deg); }
 
-/* Mobile padding safety */
+/* =============================================
+   MOBILE FIXES (max-width: 767px)
+   ============================================= */
 @media (max-width: 767px) {
-    .container { padding-left: 1.25rem; padding-right: 1.25rem; }
-    .nav-inner { padding-left: 1.25rem; padding-right: 1.25rem; }
-    .footer-headline { font-size: 2.8rem; }
+    /* 1. Dölj det editorala svarta blocket – det täcker content på mobil */
+    header::after { display: none; }
+
+    /* 2. Säkerställ konsekvent sidmarginal överallt */
+    .container {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+    .nav-inner {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    /* 3. Hero – ge tillräckligt utrymme under fixerad nav */
+    header {
+        padding-top: 7rem !important;
+        padding-bottom: 3rem;
+    }
+
+    /* 4. Sektioner – lite mer luft */
+    .section { padding: 3rem 0; }
+
+    /* 5. Footer */
+    .footer-headline { font-size: 2.6rem; }
     .footer-headline-wrap { padding: 2rem 0 1rem; }
-    .booking-card { padding: 2.5rem 1.5rem; }
-    .section { padding: 3.5rem 0; }
-    .om-photo { max-width: 200px; }
-    .photo-easter { max-width: 200px; }
-    .easter-caption { max-width: 200px; }
-    .easter-cta { max-width: 200px; }
+
+    /* 6. Bokningskort */
+    .booking-card { padding: 2.5rem 1.25rem; }
+
+    /* 7. Foto-storlek på mobil */
+    .om-photo { max-width: 180px; }
+    .photo-easter { max-width: 180px; }
+    .easter-caption { max-width: 180px; }
+    .easter-cta { max-width: 180px; }
+
+    /* 8. Services-kort – säkerställ att de inte svämmar över */
+    .service-card { margin-left: 0; margin-right: 0; }
 }
 
 /* Media Queries */
