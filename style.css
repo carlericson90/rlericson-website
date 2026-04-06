@@ -6,6 +6,7 @@
     --color-ink: #1C1B1B;
     --color-dark: #111111;
     --color-light: #F9F9F9;
+    --color-text: #4b5563;
     --color-text-gray: #4b5563;
     --color-text-light-gray: #9ca3af;
     --font-sans: 'Inter', sans-serif;
@@ -177,6 +178,56 @@ header .container {
     object-fit: cover;
     aspect-ratio: 3/4;
     filter: grayscale(100%);
+    display: block;
+}
+
+/* Easter Egg – klickbar fotowrapper */
+.photo-easter {
+    cursor: pointer;
+    max-width: 260px;
+    position: relative;
+    user-select: none;
+}
+.photo-layer--back { display: none; }
+.photo-easter.revealed .photo-layer--front { display: none; }
+.photo-easter.revealed .photo-layer--back {
+    display: block;
+    animation: fadeIn 0.35s ease;
+}
+.photo-easter.revealed .om-photo { filter: none; } /* barnbild i färg */
+.photo-hint-badge {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    background: rgba(28,27,27,0.72);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.45rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+}
+.photo-easter:hover .photo-hint-badge { opacity: 1; }
+.easter-caption {
+    font-size: 0.82rem;
+    font-style: italic;
+    color: var(--color-text-gray);
+    margin: 0.75rem 0 0.75rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 260px;
+}
+.easter-cta {
+    display: block;
+    text-align: center;
+    font-size: 0.82rem !important;
+    padding: 0.6rem 1rem !important;
+    box-shadow: none !important;
+    margin-bottom: 0;
+    max-width: 260px;
 }
 
 /* Services */
@@ -300,6 +351,20 @@ details { background: white; border: 1px solid #e5e7eb; padding: 1.5rem; margin-
 summary { font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
 summary::after { content: "▼"; color: var(--color-brand); font-size: 0.8rem; transition: 0.3s; }
 details[open] summary::after { transform: rotate(180deg); }
+
+/* Mobile padding safety */
+@media (max-width: 767px) {
+    .container { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .nav-inner { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .footer-headline { font-size: 2.8rem; }
+    .footer-headline-wrap { padding: 2rem 0 1rem; }
+    .booking-card { padding: 2.5rem 1.5rem; }
+    .section { padding: 3.5rem 0; }
+    .om-photo { max-width: 200px; }
+    .photo-easter { max-width: 200px; }
+    .easter-caption { max-width: 200px; }
+    .easter-cta { max-width: 200px; }
+}
 
 /* Media Queries */
 @media (min-width: 768px) {

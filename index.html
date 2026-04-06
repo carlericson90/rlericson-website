@@ -8,7 +8,7 @@
     
     <link rel="icon" type="image/png" href="favicon.png">
     
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     <link rel="alternate" hreflang="sv" href="https://ca.rlericson.se/" />
     <link rel="alternate" hreflang="en" href="https://ca.rlericson.se/en/" />
     <link rel="alternate" hreflang="x-default" href="https://ca.rlericson.se/" />
@@ -255,7 +255,18 @@
     <section id="om" class="section container">
         <div class="om-grid">
             <div>
-                <img src="carl-profile.jpg" alt="Carl Ericson – Fractional Growth Leader B2B" class="om-photo">
+                <!-- Easter egg: klicka bilden för en överraskning -->
+                <div class="photo-easter" onclick="this.classList.toggle('revealed')" title="Pst… klicka på bilden">
+                    <div class="photo-layer photo-layer--front">
+                        <img src="carl-pro.png" alt="Carl Ericson – Fractional Growth Leader B2B" class="om-photo">
+                        <span class="photo-hint-badge">Klicka →</span>
+                    </div>
+                    <div class="photo-layer photo-layer--back">
+                        <img src="carl-profile.jpg" alt="Calle som liten – det var en gång en tillväxtstrateg" class="om-photo">
+                        <p class="easter-caption">Spoiler: den här versionen tar fortfarande möten.</p>
+                        <a href="#booking-section" onclick="event.stopPropagation()" class="btn-primary easter-cta">Boka den vuxna varianten →</a>
+                    </div>
+                </div>
             </div>
             <div>
                 <h2 style="margin-bottom: 1.5rem;">Om Calle<span class="text-brand">.</span></h2>
