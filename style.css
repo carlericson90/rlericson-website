@@ -73,15 +73,9 @@ header {
     padding-bottom: 4rem;
 }
 
-/* Editorial color block – top right corner */
+/* Editorial color block – dold tills vidare, kan återaktiveras med foto i blocket */
 header::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 38%; height: 52%;
-    background: var(--color-ink);
-    z-index: 0;
-    pointer-events: none;
+    display: none;
 }
 
 header .container {

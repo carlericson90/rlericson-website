@@ -7,7 +7,7 @@
     <meta name="description" content="Fractional Growth Leader part-time – Carl Ericson drives B2B growth, go-to-market strategy, and sales execution for startups and scaleups in Sweden.">
     
     <link rel="icon" type="image/png" href="../favicon.png">
-    <link rel="stylesheet" href="../style.css?v=3">
+    <link rel="stylesheet" href="../style.css?v=5">
 
     <link rel="alternate" hreflang="sv" href="https://ca.rlericson.se/" />
     <link rel="alternate" hreflang="en" href="https://ca.rlericson.se/en/" />
@@ -68,9 +68,11 @@
         .om-photo {
             width: 100%;
             max-width: 260px;
-            border-radius: 1rem;
+            border-radius: 0;
             object-fit: cover;
             aspect-ratio: 3/4;
+            filter: grayscale(100%);
+            display: block;
         }
     </style>
 
@@ -307,10 +309,21 @@
     <section id="about" class="section container">
         <div class="om-grid">
             <div>
-                <img src="../carl-profile.jpg" alt="Carl Ericson – Fractional Growth Leader B2B" class="om-photo">
+                <!-- Easter egg: click the photo for a surprise -->
+                <div class="photo-easter" onclick="this.classList.toggle('revealed')" title="Psst… click the photo">
+                    <div class="photo-layer photo-layer--front">
+                        <img src="../carl-pro.png" alt="Carl Ericson – Fractional Growth Leader B2B" class="om-photo">
+                        <span class="photo-hint-badge">Click →</span>
+                    </div>
+                    <div class="photo-layer photo-layer--back">
+                        <img src="../carl-profile.jpg" alt="Young Calle – once a growth strategist in training" class="om-photo">
+                        <p class="easter-caption">Spoiler: this version still takes meetings.</p>
+                        <a href="#booking-section" onclick="event.stopPropagation()" class="btn-primary easter-cta">Book the adult version →</a>
+                    </div>
+                </div>
             </div>
             <div>
-                <h2 style="margin-bottom: 1.5rem;">About Calle</h2>
+                <h2 style="margin-bottom: 1.5rem;">About Calle<span class="text-brand">.</span></h2>
                 <div style="line-height: 1.8; color: var(--color-text);">
                     <p style="margin-bottom: 1.25rem;">I am a B2B growth strategist with roots in 15 years of real sales experience — not theory. I came to growth through business, not through marketing, and that shapes how I think: growth is a business problem, not a channel.</p>
 
