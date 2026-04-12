@@ -7,23 +7,10 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Swedish homepage -->
   <url>
     <loc>https://ca.rlericson.se/</loc>
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="sv"
-      href="https://ca.rlericson.se/" />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ca.rlericson.se/en/" />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://ca.rlericson.se/" />
-
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://ca.rlericson.se/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ca.rlericson.se/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ca.rlericson.se/" />
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -31,42 +18,32 @@ xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- English homepage -->
   <url>
     <loc>https://ca.rlericson.se/en/</loc>
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="sv"
-      href="https://ca.rlericson.se/" />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://ca.rlericson.se/en/" />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://ca.rlericson.se/" />
-
-    <lastmod>2026-03-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://ca.rlericson.se/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ca.rlericson.se/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ca.rlericson.se/" />
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Service page -->
+  <!-- Growth-as-a-Service (Swedish) -->
   <url>
     <loc>https://ca.rlericson.se/growth-as-a-service.html</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://ca.rlericson.se/growth-as-a-service.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ca.rlericson.se/en/growth-as-a-service.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ca.rlericson.se/growth-as-a-service.html" />
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    <xhtml:link
-      rel="alternate"
-      hreflang="sv"
-      href="https://ca.rlericson.se/growth-as-a-service.html" />
-
-    <xhtml:link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://ca.rlericson.se/growth-as-a-service.html" />
-
-    <lastmod>2026-03-26</lastmod>
+  <!-- Growth-as-a-Service (English) -->
+  <url>
+    <loc>https://ca.rlericson.se/en/growth-as-a-service.html</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://ca.rlericson.se/growth-as-a-service.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ca.rlericson.se/en/growth-as-a-service.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ca.rlericson.se/growth-as-a-service.html" />
+    <lastmod>2026-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
